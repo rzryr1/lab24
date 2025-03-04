@@ -22,8 +22,16 @@ int main(){
 	
 	loc = find(line_up.begin(),line_up.end(),"Bob");
 	line_up.insert(loc,"Oscar");
-	
-	//Write your code here
+
+	line_up.push_back("Nami");
+    line_up.push_front("Narutu");
+    
+    loc = find(line_up.begin(), line_up.end(), "Alice");
+    line_up.insert(loc, "Sanji");
+    
+	line_up.remove("Alice");
+    line_up.remove("Bob");
+	line_up.remove("Oscar");
 	
 	printList(line_up);
 		
